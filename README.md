@@ -24,7 +24,7 @@ I'm **Md Mubashiruddin**, a passionate **full-stack web developer** and **Python
 
 ### 1️⃣ **SerenitySphere**  
 A **comprehensive mental health support** and **well-being platform** designed for emotional well-being tracking, community support, AI-powered personalization, and crisis intervention.  
-🔗 **[Live Site](https://serenitysphere.vercel.app/)**
+🔗 **[Live Site](https://serenity-sphere-beta.vercel.app/)**
 
 ### 2️⃣ **FlowCare**  
 An **interactive platform** empowering young girls (13-25) to manage **menstrual health** with **education, cycle tracking, expert consultations, and community support**.  
