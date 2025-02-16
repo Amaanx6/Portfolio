@@ -6,6 +6,8 @@ import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+
+// Declare smoother as a global variable
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
@@ -35,10 +37,12 @@ const Navbar = () => {
         }
       });
     });
+
     window.addEventListener("resize", () => {
       ScrollSmoother.refresh(true);
     });
   }, []);
+
   return (
     <>
       <div className="header">
