@@ -1,77 +1,79 @@
-import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-import { SplitText } from "gsap-trial/SplitText";
+import gsap from "gsap";
 
-interface ParaElement extends HTMLElement {
+gsap.registerPlugin(ScrollTrigger);
+
+interface SplitTextElement extends HTMLElement {
   anim?: gsap.core.Animation;
-  split?: SplitText;
 }
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 export default function setSplitText() {
   ScrollTrigger.config({ ignoreMobileResize: true });
-  if (window.innerWidth < 900) return;
-  const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
-  const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");
 
-  const TriggerStart = window.innerWidth <= 1024 ? "top 60%" : "20% 60%";
-  const ToggleAction = "play pause resume reverse";
+  const paragraphs = document.querySelectorAll<SplitTextElement>(".split-text-target");
 
-  paras.forEach((para: ParaElement) => {
-    para.classList.add("visible");
+  paragraphs.forEach((para) => {
     if (para.anim) {
       para.anim.progress(1).kill();
-      para.split?.revert();
+      para.anim = undefined;
     }
 
-    para.split = new SplitText(para, {
-      type: "lines,words",
-      linesClass: "split-line",
-    });
+    // Custom text splitting logic
+    const text = para.textContent;
+    if (text) {
+      const words = text.split(" ");
+      para.innerHTML = words
+        .map((word) => `<span class="word">${word}</span>`)
+        .join(" ");
+    }
 
     para.anim = gsap.fromTo(
-      para.split.words,
-      { autoAlpha: 0, y: 80 },
+      para.querySelectorAll(".word"),
+      { opacity: 0, y: 20 },
       {
-        autoAlpha: 1,
-        scrollTrigger: {
-          trigger: para.parentElement?.parentElement,
-          toggleActions: ToggleAction,
-          start: TriggerStart,
-        },
-        duration: 1,
-        ease: "power3.out",
+        opacity: 1,
         y: 0,
-        stagger: 0.02,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: para,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
       }
     );
   });
-  titles.forEach((title: ParaElement) => {
+
+  const titles = document.querySelectorAll<SplitTextElement>(".split-text-title");
+
+  titles.forEach((title) => {
     if (title.anim) {
       title.anim.progress(1).kill();
-      title.split?.revert();
+      title.anim = undefined;
     }
-    title.split = new SplitText(title, {
-      type: "chars,lines",
-      linesClass: "split-line",
-    });
+
+    // Custom text splitting logic
+    const text = title.textContent;
+    if (text) {
+      const chars = text.split("");
+      title.innerHTML = chars
+        .map((char) => `<span class="char">${char}</span>`)
+        .join("");
+    }
+
     title.anim = gsap.fromTo(
-      title.split.chars,
-      { autoAlpha: 0, y: 80, rotate: 10 },
+      title.querySelectorAll(".char"),
+      { opacity: 0, y: 20 },
       {
-        autoAlpha: 1,
-        scrollTrigger: {
-          trigger: title.parentElement?.parentElement,
-          toggleActions: ToggleAction,
-          start: TriggerStart,
-        },
-        duration: 0.8,
-        ease: "power2.inOut",
+        opacity: 1,
         y: 0,
-        rotate: 0,
-        stagger: 0.03,
+        stagger: 0.05,
+        scrollTrigger: {
+          trigger: title,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
       }
     );
   });
