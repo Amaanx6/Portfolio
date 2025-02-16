@@ -8,17 +8,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   useEffect(() => {
-    let links = document.querySelectorAll(".header ul a");
+    const links = document.querySelectorAll(".header ul a");
+
     links.forEach((elem) => {
-      let element = elem as HTMLAnchorElement;
+      const element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
         if (window.innerWidth > 1024) {
           e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
-          document.querySelector(section).scrollIntoView({
-            behavior: "smooth",
-          });
+          const section = element.getAttribute("data-href");
+
+          // Check if section is not null
+          if (section) {
+            const targetElement = document.querySelector(section);
+
+            // Check if targetElement is not null
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          }
         }
       });
     });
