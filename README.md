@@ -42,8 +42,7 @@ A **versatile file management tool** that allows users to **view, edit, convert,
 
 I'm always open to collaboration and new opportunities! Connect with me:  
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/md-mubashiruddin)  
-- 💻 [GitHub](https://github.com/Amaanx6)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/md-mubashiruddin)    
 - 🏆 [LeetCode](https://leetcode.com/u/mubashirx/)  
 - 📖 [GeeksforGeeks](https://www.geeksforgeeks.org/user/mubashirx/)  
 - 🐦 [Twitter](https://twitter.com/amaanx_6)  
