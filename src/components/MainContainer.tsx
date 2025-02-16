@@ -8,26 +8,30 @@ import Navbar from "./Navbar";
 import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 
-import setSplitText from "./utils/splitText";
+import setSplitText from "./utils/splitText"; // Updated to use custom logic
 
 const TechStack = lazy(() => import("./TechStack"));
 
 const MainContainer = ({ children }: PropsWithChildren) => {
-  const [isDesktopView, setIsDesktopView] = useState<boolean>(
-    window.innerWidth > 1024
-  );
+  const [isDesktopView, setIsDesktopView] = useState<boolean>(false);
 
   useEffect(() => {
     const resizeHandler = () => {
-      setSplitText();
+      setSplitText(); // Updated to use custom logic
       setIsDesktopView(window.innerWidth > 1024);
     };
+
+    // Set initial state
     resizeHandler();
+
+    // Add event listener
     window.addEventListener("resize", resizeHandler);
+
+    // Cleanup
     return () => {
       window.removeEventListener("resize", resizeHandler);
     };
-  }, [isDesktopView]);
+  }, []);
 
   return (
     <div className="container-main">
