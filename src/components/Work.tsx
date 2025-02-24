@@ -1,11 +1,6 @@
 import { MdArrowOutward } from "react-icons/md";
 import "./styles/Work.css";
 
-// Import the images directly
-import serenitySphereImg from "../assets/images/serenitysphere.png";
-import mediconnectImg from "../assets/images/mediconnect.png";
-import flowcareImg from "../assets/images/flowcare.png";
-
 interface Project {
   title: string;
   description: string;
@@ -21,7 +16,7 @@ const Work = () => {
       title: "SerenitySphere",
       description: "Mental Health Platform",
       tools: "Vite, React, JSX, Gemini API, Vercel v0",
-      image: serenitySphereImg,  // Use imported image
+      image: "/images/SerenitySphere.png",
       link: "https://serenity-sphere-beta.vercel.app",
       alt: "SerenitySphere project screenshot",
     },
@@ -29,7 +24,7 @@ const Work = () => {
       title: "MediConnect",
       description: "Medication Management Solution",
       tools: "React.js, Vite, TailwindCSS, Express.js, Node.js, MongoDB",
-      image: mediconnectImg,  // Use imported image
+      image: "/images/MediConnect.png",
       link: "https://medi-connect-delta.vercel.app/",
       alt: "MediConnect project screenshot",
     },
@@ -37,13 +32,12 @@ const Work = () => {
       title: "FlowCare",
       description: "Menstrual Health Management",
       tools: "React.js, Vite, TailwindCSS, Express.js, Node.js, MongoDB",
-      image: flowcareImg,  // Use imported image
+      image: "/images/FlowCare.png",
       link: "https://flow-care.vercel.app",
       alt: "FlowCare project screenshot",
     },
   ];
 
-  // The rest of your component remains the same
   return (
     <section className="work-section" id="work">
       <div className="work-container">
@@ -80,29 +74,29 @@ interface WorkImageProps {
 }
 
 const WorkImage = ({ image, alt, link }: WorkImageProps) => {
-    return (
-      <div className="work-image">
-        <a
-          className="work-image-in"
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-cursor="disable"
-        >
-          {link && (
-            <div className="work-link">
-              <MdArrowOutward />
-            </div>
-          )}
-          <img 
-            src={image} 
-            alt={alt || "Project preview"} 
-            loading="lazy"
-            className="work-img"
-          />
-        </a>
-      </div>
-    );
-  };
+  return (
+    <div className="work-image">
+      <a
+        className="work-image-in"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cursor="disable"
+      >
+        {link && (
+          <div className="work-link">
+            <MdArrowOutward />
+          </div>
+        )}
+        <img 
+          src={image} 
+          alt={alt || "Project preview"} 
+          loading="lazy"
+          className="work-img"
+        />
+      </a>
+    </div>
+  );
+};
 
 export default Work;
