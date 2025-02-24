@@ -80,7 +80,7 @@ const SocialIcons = () => {
           </a>
         </span>
         </div>
-<a className="resume-button" href="https://www.canva.com/design/DAGTigeJZK4/TZhxJ8qF9Gpi3KG5DmFapg/view?utm_content=DAGTigeJZK4&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener noreferrer">
+<a className="resume-button" href="https://www.canva.com/design/DAGcExusT9o/9eLJA3dLohU98wg0oXtPGw/view?utm_content=DAGcExusT9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c8a291e15" target="_blank" rel="noopener noreferrer">
   <HoverLinks text="RESUME" />
   <span>
     <TbNotes />
