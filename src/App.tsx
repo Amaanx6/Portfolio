@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { RecoilRoot } from "recoil"; // Import RecoilRoot
 import "./App.css";
 
 const CharacterModel = lazy(() => import("./components/Character"));
@@ -7,7 +8,7 @@ import { LoadingProvider } from "./context/LoadingProvider";
 
 const App = () => {
   return (
-    <>
+    <RecoilRoot> {/* Wrap the app inside RecoilRoot */}
       <LoadingProvider>
         <Suspense>
           <MainContainer>
@@ -17,7 +18,7 @@ const App = () => {
           </MainContainer>
         </Suspense>
       </LoadingProvider>
-    </>
+    </RecoilRoot>
   );
 };
 
