@@ -36,6 +36,21 @@ const Work = () => {
       link: "https://flow-care.vercel.app",
       alt: "FlowCare project screenshot",
     },
+    {
+      title: "WebLenses",
+      description: "Chrome Extension for DOM Version Control",
+      tools: "React, TypeScript, TailwindCSS, AI Assistants",
+      image: "/images/WebLenses.png",
+      alt: "WebLenses project screenshot",
+    },
+    {
+      title: "AIDucate (EduPlay)",
+      description: "AI-Powered Learning Platform",
+      tools: "React, TailwindCSS, Recoil, Framer Motion, TypeScript, Gemini API",
+      image: "/images/EduPlay.png",
+      link: "https://edu-play-nine.vercel.app/",
+      alt: "AIDucate project screenshot",
+    },
   ];
 
   return (
