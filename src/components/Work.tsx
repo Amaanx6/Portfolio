@@ -44,12 +44,19 @@ const Work = () => {
       alt: "WebLenses project screenshot",
     },
     {
-      title: "AIDucate (EduPlay)",
+      title: "AIDucate",
       description: "AI-Powered Learning Platform",
       tools: "React, TailwindCSS, Recoil, Framer Motion, TypeScript, Gemini API",
       image: "/images/EduPlay.png",
-      link: "https://edu-play-nine.vercel.app/",
+      link: "https://aiducate.vercel.app/",
       alt: "AIDucate project screenshot",
+    },
+    {
+      title: "QuickPhish",
+      description: "Browser Extension that detects phishing links",
+      tools: "React, TailwindCSS, Recoil, Framer Motion, TypeScript, Gemini API",
+      image: "/images/QP.png",
+      alt: "QuickPhish project screenshot",
     },
   ];
 
