@@ -1,52 +1,103 @@
-# Md Mubashiruddin - Portfolio Website
+# Md Mubashiruddin — Full Stack & AI Developer
 
-Welcome to my portfolio website! This site showcases my skills, projects, and contact details as a full-stack developer.
+> B.E. Information Technology @ Lords Institute of Engineering and Technology (2027) · Hyderabad, India  
+> 🏆 Feuji AI Innovate 2025 Hackathon — 3rd Place among 45+ teams
 
-## 🚀 Tech Stack
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-md--mubashiruddin-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/md-mubashiruddin)
+[![GitHub](https://img.shields.io/badge/GitHub-Amaanx6-181717?style=flat&logo=github)](https://github.com/Amaanx6)
+[![LeetCode](https://img.shields.io/badge/LeetCode-mubashirx-FFA116?style=flat&logo=leetcode)](https://leetcode.com/u/mubashirx/)
+[![Email](https://img.shields.io/badge/Email-mubashiruddinmd@gmail.com-EA4335?style=flat&logo=gmail)](mailto:mubashiruddinmd@gmail.com)
 
-- **Frontend:** React, TypeScript, HTML, CSS, JavaScript  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **Other Technologies:** Python, C  
+---
 
-## 📌 Table of Contents
+## About Me
 
-- [About Me](#about-me)
-- [Skills](#skills)
-- [Projects](#projects)
-- [Contact](#contact)
+Full Stack Developer specializing in MERN stack, AI-integrated systems, and multi-agent architectures. I build and ship production-grade web applications — from Chrome extensions to LLM-powered platforms — with a focus on performance, security, and scalable design.
 
-## 🏆 About Me
+Currently pursuing B.E. in Information Technology with concentrations in Full Stack Development, AI, and MERN Stack.
 
-I'm **Md Mubashiruddin**, a passionate **full-stack web developer** and **Python developer**. I specialize in building efficient, scalable applications with a focus on problem-solving and innovation.
+---
 
-## 🛠️ Projects
+## Tech Stack
 
-### 1️⃣ **SerenitySphere**  
-A **comprehensive mental health support** and **well-being platform** designed for emotional well-being tracking, community support, AI-powered personalization, and crisis intervention.  
-🔗 **[Live Site](https://serenity-sphere-beta.vercel.app/)**
+**Languages:** C · C++ · Python · JavaScript · TypeScript
 
-### 2️⃣ **FlowCare**  
-An **interactive platform** empowering young girls (13-25) to manage **menstrual health** with **education, cycle tracking, expert consultations, and community support**.  
-🔗 **[Live Site](https://flow-care.vercel.app/)**
+**Frontend:** React.js · Next.js · Tailwind CSS · Framer Motion · HTML · CSS
 
-### 3️⃣ **MediConnect**  
-A **medication management solution** integrating **AI-powered prescription analysis, cost comparisons, educational resources, and 24/7 support**.  
-🔗 **[Live Site](https://medi-connect-delta.vercel.app/)**
+**Backend:** Node.js · Express.js · FastAPI · RESTful APIs
 
-### 4️⃣ **FileSwift**  
-A **versatile file management tool** that allows users to **view, edit, convert, merge, and compress PDFs and images** efficiently.  
-🔗 **[Live Site](https://file-swift.vercel.app/)**
+**Databases:** MongoDB · PostgreSQL · Redis · Prisma
 
-## 📬 Contact Me
+**AI & Agents:** Gemini API · LangGraph · Multi-agent Systems · Prompt Engineering
 
-I'm always open to collaboration and new opportunities! Connect with me:  
+**Tools:** AWS · Git · GitHub · Vercel · JWT · Bcrypt · Recoil · Axios · Playwright · Chrome Extensions API · POSTMAN
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/md-mubashiruddin)    
-- 🏆 [LeetCode](https://leetcode.com/u/mubashirx/)  
-- 📖 [GeeksforGeeks](https://www.geeksforgeeks.org/user/mubashirx/)  
-- 🐦 [Twitter](https://twitter.com/amaanx_6)  
+---
 
-📩 **Email:** mubashiruddinmd@gmail.com  
+## Projects
 
-Thank you for visiting my portfolio! 🚀
+### BrainBolt
+An AI-integrated interactive learning platform with personalized content, adaptive quizzes, and real-time feedback.
+
+- Built with React, Tailwind CSS, Recoil, Framer Motion, TypeScript
+- Integrated Gemini API and Zod for intelligent data handling — 40% efficiency boost
+- Architected auth system using Node.js, Express, MongoDB with bcrypt + JWT
+- Deployed on Vercel with 99% uptime
+
+### WebLenses
+A Chrome extension enabling Git-style DOM version control for QA and development teams.
+
+- Led frontend development: DOM snapshot viewer, diff visualizer, collaborative annotation tools
+- Embedded AI assistants for real-time detection of untested elements and WCAG accessibility issues
+- Reduced testing cycle time by 35% · Accelerated tester onboarding by 40%
+
+### SerenitySphere
+An AI-driven mental health platform for emotional tracking, therapy suggestions, and crisis detection.
+
+- Built with React, Tailwind CSS, Express.js, MongoDB
+- Integrated Gemini API for personalized therapy insights — 38% improvement in early intervention
+- End-to-end security with bcrypt, JWT, encrypted journaling — 100% security audit compliance
+- Boosted daily active users by 45%
+
+🔗 [Live Site](https://serenity-sphere-beta.vercel.app/)
+
+### FlowCare
+An interactive platform empowering young girls (13–25) to manage menstrual health with cycle tracking, expert consultations, and community support.
+
+🔗 [Live Site](https://flow-care.vercel.app/)
+
+### MediConnect
+A medication management solution with AI-powered prescription analysis, cost comparisons, and 24/7 support.
+
+🔗 [Live Site](https://medi-connect-delta.vercel.app/)
+
+### FileSwift
+A versatile file management tool for viewing, editing, converting, merging, and compressing PDFs and images.
+
+🔗 [Live Site](https://file-swift.vercel.app/)
+
+---
+
+## Experience
+
+**Data Research Analyst — Concentrix** *(Nov 2024 – Jan 2025)*
+- Analyzed 50,000+ record datasets using Python and Excel to extract actionable business insights
+- Maintained 98%+ data accuracy across structured/unstructured data pipelines
+- Reduced stakeholder reporting time by 25% through executive-level data visualizations
+
+---
+
+## Achievement
+
+🏆 **Feuji AI Innovate 2025 Hackathon — 3rd Place** *(Apr 2025, Hyderabad)*  
+Won among 45+ teams at the Feuji × T-Hub hackathon. Delivered a production-ready GenAI prototype within a 48-hour sprint as lead developer.
+
+---
+
+## Connect
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/md-mubashiruddin)
+- 🏆 [LeetCode](https://leetcode.com/u/mubashirx/)
+- 📖 [GeeksforGeeks](https://www.geeksforgeeks.org/user/mubashirx/)
+- 🐦 [Twitter](https://twitter.com/amaanx_6)
+- 📩 mubashiruddinmd@gmail.com
