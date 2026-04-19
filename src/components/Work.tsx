@@ -13,6 +13,14 @@ interface Project {
 const Work = () => {
   const projects: Project[] = [
     {
+      title: "BrainBolt",
+      description: "AI-Powered Learning Platform",
+      tools: "React, TailwindCSS, Recoil, Framer Motion, TypeScript, Gemini API",
+      image: "/images/EduPlay.png",
+      link: "https://brain-bolt.vercel.app/",
+      alt: "AIDucate project screenshot",
+    },
+    {
       title: "SerenitySphere",
       description: "Mental Health Platform",
       tools: "Vite, React, JSX, Gemini API, Vercel v0",
@@ -43,14 +51,7 @@ const Work = () => {
       image: "/images/WebLenses.png",
       alt: "WebLenses project screenshot",
     },
-    {
-      title: "AIDucate",
-      description: "AI-Powered Learning Platform",
-      tools: "React, TailwindCSS, Recoil, Framer Motion, TypeScript, Gemini API",
-      image: "/images/EduPlay.png",
-      link: "https://aiducate.vercel.app/",
-      alt: "AIDucate project screenshot",
-    },
+
     {
       title: "QuickPhish",
       description: "Browser Extension that detects phishing links",
@@ -110,9 +111,9 @@ const WorkImage = ({ image, alt, link }: WorkImageProps) => {
             <MdArrowOutward />
           </div>
         )}
-        <img 
-          src={image} 
-          alt={alt || "Project preview"} 
+        <img
+          src={image}
+          alt={alt || "Project preview"}
           loading="lazy"
           className="work-img"
         />

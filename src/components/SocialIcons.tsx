@@ -70,7 +70,7 @@ const SocialIcons = () => {
           </a>
         </span>
         <span>
-          <a href="https://x.com/amaanx_6" target="_blank">
+          <a href="https://x.com/Mubashirx6" target="_blank">
             <FaXTwitter />
           </a>
         </span>
@@ -79,15 +79,15 @@ const SocialIcons = () => {
             <FaInstagram />
           </a>
         </span>
-        </div>
-<a className="resume-button" href="https://www.canva.com/design/DAGkV3TX-tA/ujNP4ZvKZb934_qBSTmBNg/view?utm_content=DAGkV3TX-tA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ef5af468b" target="_blank" rel="noopener noreferrer">
-  <HoverLinks text="RESUME" />
-  <span>
-    <TbNotes />
-  </span>
-</a>
-</div>
-);
+      </div>
+      <a className="resume-button" href="https://canva.link/mubashir-resume" target="_blank" rel="noopener noreferrer">
+        <HoverLinks text="RESUME" />
+        <span>
+          <TbNotes />
+        </span>
+      </a>
+    </div>
+  );
 };
 
 export default SocialIcons;
